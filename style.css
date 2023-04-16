@@ -1,0 +1,150 @@
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+  }
+  
+  .image-container:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 15px;
+    opacity: 0.3;
+  }
+  
+  .image-container:hover::after {
+    content: '';
+
+    background-image: url('images/icon-view.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 40px;
+    height: 40px;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 250px;
+    border-radius: 15px;
+    background-color: hsl(216, 50%, 16%);
+  }
+
+  .image {
+    max-width: 100%;
+    border-radius: 15px;
+  }
+
+  .card-details {
+    text-align: left;
+  }
+  
+  .card-title {
+    margin: 0;
+    padding: 15px 0 5px 0;
+    color: white;
+    font-weight: 600;
+  }
+
+  .card-title:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+  }
+  
+  .card-description {
+    margin: 10px 0;
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+  }
+  
+  .card-price {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .price-icon {
+    width: 10px;
+    height: 15px;
+    margin-right: 5px;
+  }
+  
+  .price-amount {
+    font-weight: 600;
+    color: hsl(178, 100%, 50%);
+  }
+  
+  .price-extra {
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+    font-size: 14px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+  }
+  
+  .extra-icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 3px;
+  }
+  
+  .card-maker {
+    margin: 10px 0 0;
+  }
+  
+  .creator-info {
+    display: flex;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+  }
+  
+  .creator-avatar {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: 1px solid white;
+  }
+  
+  hr {
+    border: 1px solid hsl(215, 32%, 27%);
+  }
+
+  .name{
+    color: white;
+  }
+
+  .name:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+  }

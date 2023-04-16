@@ -32,7 +32,7 @@ body {
   .image-container:hover::after {
     content: '';
 
-    background-image: url('images/icon-view.svg');
+    background-image: url('icon-view.svg');
     background-size: contain;
     background-repeat: no-repeat;
 
